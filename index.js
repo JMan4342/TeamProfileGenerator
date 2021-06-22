@@ -29,6 +29,9 @@ inquirer
       name: "subordinateChoice",
       choices: ["Engineer", "Intern", "None"],
     },
+
+    // Create if statements to proceed to engineer or intern questions
+
     // Enginner questions
     {
         type: "input",
@@ -50,6 +53,9 @@ inquirer
         message: "What is the engineer's GitHub account?",
         name: "engineerGithub",
       },
+
+    //  Loop back to subordinateChoice
+    
     //   Intern questions
       {
         type: "input",
@@ -71,4 +77,6 @@ inquirer
         message: "What is the intern's school?",
         name: "internSchool",
       },
+
+    //   Loop back to subordinate choice
   ])
