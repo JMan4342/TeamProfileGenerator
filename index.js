@@ -25,39 +25,50 @@ inquirer
     },
     {
       type: "list",
-      message: "What employee profile would you like to build next?",
+      message: "What type of employee profile would you like to add next?",
       name: "subordinateChoice",
-      choices: ["Engineer", "Intern"],
+      choices: ["Engineer", "Intern", "None"],
     },
+    // Enginner questions
     {
-      type: "input",
-      message: "Please write a short description of your project.",
-      name: "description",
-    },
-    {
-      type: "list",
-      message: "What kind of license should your project have?",
-      name: "license",
-    },
-    {
-      type: "input",
-      message: "What command should be run to install dependencies?",
-      name: "command",
-    },
-    {
-      type: "input",
-      message: "What does the user need to know about using the repo?",
-      name: "usingRepo",
-    },
-    {
-      type: "input",
-      message:
-        "What does the user need to know about contributing to the repo?",
-      name: "contributing",
-    },
-    {
-      type: "input",
-      message: "What is your email address?",
-      name: "email",
-    },
+        type: "input",
+        message: "What is the engineer's name?",
+        name: "engineerName",
+      },
+      {
+        type: "input",
+        message: "What is the engineer's employee ID?",
+        name: "engineerID",
+      },
+      {
+        type: "input",
+        message: "What is the engineer's email address?",
+        name: "engineerEmail",
+      },
+      {
+        type: "input",
+        message: "What is the engineer's GitHub account?",
+        name: "engineerGithub",
+      },
+    //   Intern questions
+      {
+        type: "input",
+        message: "What is the intern's name?",
+        name: "internName",
+      },
+      {
+        type: "input",
+        message: "What is the intern's employee ID?",
+        name: "internID",
+      },
+      {
+        type: "input",
+        message: "What is the intern's email address?",
+        name: "internEmail",
+      },
+      {
+        type: "input",
+        message: "What is the intern's school?",
+        name: "internSchool",
+      },
   ])
