@@ -4,7 +4,7 @@ describe("Employee", () => {
     describe("Initilization", () => {
         it("should create an object containing a name, email, and id", () => {
             // Arrange
-            const employee = new Employee("Nick", "n@2u.com", 1);
+            const employee = new Employee("name", "email", "id");
             // Act?
             // Assert
             expect("name" in employee).toBe(true);
@@ -14,23 +14,23 @@ describe("Employee", () => {
 
         it("should set the name property via the constructor arguments", () => {
             // Arrange
-            const employee = new Employee("Nick", "n@2u.com", 1);
+            const employee = new Employee("name", "email", "id");
             // Assert
-            expect(employee.name).toBe("Nick");
+            expect(employee.name).toBe("name");
         });
 
         it("should set the email property via the constructor arguments", () => {
             // Arrange
-            const employee = new Employee("Nick", "n@2u.com", 1);
+            const employee = new Employee("name", "email", "id");
             // Assert
-            expect(employee.email).toBe("n@2u.com");
+            expect(employee.email).toBe("email");
         });
 
         it("should set the id property via the constructor arguments", () => {
             // Arrange
-            const employee = new Employee("Nick", "n@2u.com", 1);
+            const employee = new Employee("name", "email", "id");
             // Assert
-            expect(employee.id).toBe(1);
+            expect(employee.id).toBe("id");
         });
     });
 });
