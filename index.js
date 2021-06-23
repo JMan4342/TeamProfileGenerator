@@ -106,5 +106,5 @@ inquirer
     } else {
         // create our html page
     }
-}),
+})
         }

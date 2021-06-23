@@ -11,7 +11,7 @@ describe("Employee", () => {
             expect("email" in employee).toBe(true);
             expect("id" in employee).toBe(true);
         });
-        
+
         it("should set the name property via the constructor arguments", () => {
             // Arrange
             const employee = new Employee("Nick", "n@2u.com", 1);
