@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+const fs = require("fs");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -40,8 +41,17 @@ function init() {
                 )
             );
             console.log(employees);
+            
+                // var managerProfile = document.querySelector("#managerProfile");
+                // manager.name = document.createElement("h2");
+                // "Manager" = document.createElement("h3");
+                // manager.id = document.createElement("p");
+                // manager.email = document.createElement("p");
+                // manager.officeNumber = document.createElement("p");
+            
             employeeMenu();
         });
+
 }
 
 // Enginner questions
@@ -75,10 +85,18 @@ function buildEngineer() {
                     engineer.name,
                     engineer.email,
                     engineer.id,
-                    engineer.officeNumber
+                    engineer.github,
                     )
                 );
                 console.log(employees);
+                // (function renderEngineer(name, email, id, github) {
+                //     var engineerProfile = document.querySelector("#engineerProfile");
+                //     name = document.createElement("h2");
+                //     ("Engineer") = document.createElement("h3");
+                //     ("ID: " + id) = document.createElement("p");
+                //     ("Email: " + email) = document.createElement("p");
+                //     ("GitHub: " + github) = document.createElement("p");
+                // });
                 employeeMenu();
             });
     
@@ -115,10 +133,18 @@ function buildIntern() {
                     intern.name,
                     intern.email,
                     intern.id,
-                    intern.officeNumber
+                    intern.school,
                     )
                 );
                 console.log(employees);
+                // (function renderIntern(name, email, id, school) {
+                //     var internProfile = document.querySelector("#internProfile");
+                //     name = document.createElement("h2");
+                //     ("Intern") = document.createElement("h3");
+                //     ("ID: " + id) = document.createElement("p");
+                //     ("Email: " + email) = document.createElement("p");
+                //     ("School: " + school) = document.createElement("p");
+                // });
                 employeeMenu();
             });
     
@@ -140,6 +166,7 @@ function employeeMenu() {
             buildIntern();
         } else {
             // create our html page
+            (fs.writeFile("index.html"))
         }
     })
 }
