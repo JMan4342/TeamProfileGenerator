@@ -43,13 +43,6 @@ function init() {
       );
       console.log(employees);
 
-      // var managerProfile = document.querySelector("#managerProfile");
-      // manager.name = document.createElement("h2");
-      // "Manager" = document.createElement("h3");
-      // manager.id = document.createElement("p");
-      // manager.email = document.createElement("p");
-      // manager.officeNumber = document.createElement("p");
-
       employeeMenu();
     });
 }
@@ -89,15 +82,6 @@ function buildEngineer() {
         )
       );
       console.log(employees);
-    //   (function renderEngineer(name, email, id, github) {
-    //       var engineerProfile = document.querySelector("#engineerProfile");
-    //       engineerProfile = function(){
-    //       name = document.createElement("h2");
-    //       `"ID: " + id` = document.createElement("p");
-    //       `"Email: " + email` = document.createElement("p");
-    //       `"GitHub: " + github` = document.createElement("p");
-    //       }
-    //   });
       employeeMenu();
     });
 }
@@ -132,14 +116,6 @@ function buildIntern() {
         new Intern(intern.name, intern.email, intern.id, intern.school)
       );
       console.log(employees);
-      // (function renderIntern(name, email, id, school) {
-      //     var internProfile = document.querySelector("#internProfile");
-      //     name = document.createElement("h2");
-      //     ("Intern") = document.createElement("h3");
-      //     ("ID: " + id) = document.createElement("p");
-      //     ("Email: " + email) = document.createElement("p");
-      //     ("School: " + school) = document.createElement("p");
-      // });
       employeeMenu();
     });
 }
