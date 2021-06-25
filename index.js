@@ -41,7 +41,6 @@ function init() {
           manager.officeNumber
         )
       );
-      console.log(employees);
 
       employeeMenu();
     });
@@ -81,7 +80,6 @@ function buildEngineer() {
           engineer.github
         )
       );
-      console.log(employees);
       employeeMenu();
     });
 }
@@ -115,7 +113,6 @@ function buildIntern() {
       employees.push(
         new Intern(intern.name, intern.email, intern.id, intern.school)
       );
-      console.log(employees);
       employeeMenu();
     });
 }
@@ -140,7 +137,6 @@ function employeeMenu() {
           "./dist/index.html",
           generateHTML(employees),
           function (err) {
-            console.log("Employees:", employees);
           }
         );
       }
