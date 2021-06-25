@@ -1,0 +1,76 @@
+header {
+    text-align: center;
+    background-color: cornflowerblue;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#managerProfile,
+#engineerProfile,
+#internProfile {
+    background: blanchedalmond;
+    margin: 5px;
+    padding: 13px;
+    border-radius: 15px;
+}
+
+h2 {
+    margin: -13px;
+    padding-left: 13px;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 15px;
+}
+h3 {
+    margin: -13px;
+    padding-left: 13px;
+    color: white;
+    margin-top: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+}
+
+#managerProfile h2 {
+    background: navy;
+}
+
+#managerProfile h3 {
+    background: navy;
+}
+
+#engineerProfile h2 {
+    background: rgb(1, 82, 14);
+}
+
+#engineerProfile h3 {
+    background: rgb(1, 82, 14);
+}
+
+#internProfile h2 {
+    background: rgb(61, 1, 43);
+}
+
+#internProfile h3 {
+    background: rgb(61, 1, 43);
+}
+
+p {
+    background: aliceblue;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
